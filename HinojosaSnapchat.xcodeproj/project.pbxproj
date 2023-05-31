@@ -14,7 +14,6 @@
 		E87850772A27A17900699491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87850752A27A17900699491 /* Main.storyboard */; };
 		E87850792A27A17B00699491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87850782A27A17B00699491 /* Assets.xcassets */; };
 		E878507C2A27A17B00699491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E878507A2A27A17B00699491 /* LaunchScreen.storyboard */; };
-		E87850842A27A53500699491 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E87850832A27A53500699491 /* GoogleService-Info.plist */; };
 		E87850882A27B2CC00699491 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E87850872A27B2CC00699491 /* FirebaseAnalytics */; };
 		E878508A2A27B2CC00699491 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = E87850892A27B2CC00699491 /* FirebaseAnalyticsOnDeviceConversion */; };
 		E878508C2A27B2CC00699491 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E878508B2A27B2CC00699491 /* FirebaseAnalyticsSwift */; };
@@ -42,6 +41,7 @@
 		E87850B82A27B2CC00699491 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E87850B72A27B2CC00699491 /* FirebaseRemoteConfigSwift */; };
 		E87850BA2A27B2CC00699491 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E87850B92A27B2CC00699491 /* FirebaseStorage */; };
 		E87850BC2A27B2CC00699491 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E87850BB2A27B2CC00699491 /* FirebaseStorageCombine-Community */; };
+		E87850BE2A27C02900699491 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E87850BD2A27C02900699491 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +55,7 @@
 		E87850782A27A17B00699491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E878507B2A27A17B00699491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E878507D2A27A17B00699491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E87850832A27A53500699491 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E87850BD2A27C02900699491 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECA86C30A3E0EF02A2A8863D /* Pods-HinojosaSnapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HinojosaSnapchat.debug.xcconfig"; path = "Target Support Files/Pods-HinojosaSnapchat/Pods-HinojosaSnapchat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,7 @@
 		E878506E2A27A17900699491 /* HinojosaSnapchat */ = {
 			isa = PBXGroup;
 			children = (
-				E87850832A27A53500699491 /* GoogleService-Info.plist */,
+				E87850BD2A27C02900699491 /* GoogleService-Info.plist */,
 				E878506F2A27A17900699491 /* AppDelegate.swift */,
 				E87850712A27A17900699491 /* SceneDelegate.swift */,
 				E87850732A27A17900699491 /* IniciarSesionViewController.swift */,
@@ -241,9 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87850BE2A27C02900699491 /* GoogleService-Info.plist in Resources */,
 				E878507C2A27A17B00699491 /* LaunchScreen.storyboard in Resources */,
 				E87850792A27A17B00699491 /* Assets.xcassets in Resources */,
-				E87850842A27A53500699491 /* GoogleService-Info.plist in Resources */,
 				E87850772A27A17900699491 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
