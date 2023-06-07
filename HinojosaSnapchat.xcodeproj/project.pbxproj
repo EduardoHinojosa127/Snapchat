@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		45963FBC014D74CC7BE27F9F /* Pods_HinojosaSnapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82173C2A24E1E6157D46028F /* Pods_HinojosaSnapchat.framework */; };
+		E81CC0A22A30E56900E8D3F6 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CC0A12A30E56900E8D3F6 /* SnapsViewController.swift */; };
+		E81CC0A42A30E91100E8D3F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E81CC0A32A30E91100E8D3F6 /* GoogleService-Info.plist */; };
+		E81CC0A62A30ED9D00E8D3F6 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CC0A52A30ED9D00E8D3F6 /* ImagenViewController.swift */; };
+		E81CC0AC2A310D0200E8D3F6 /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CC0AB2A310D0200E8D3F6 /* ElegirUsuarioViewController.swift */; };
+		E81CC0B02A31127000E8D3F6 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CC0AF2A31127000E8D3F6 /* Usuario.swift */; };
+		E81CC0B22A3119E500E8D3F6 /* RegistrarseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CC0B12A3119E500E8D3F6 /* RegistrarseViewController.swift */; };
 		E87850702A27A17900699491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E878506F2A27A17900699491 /* AppDelegate.swift */; };
 		E87850722A27A17900699491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87850712A27A17900699491 /* SceneDelegate.swift */; };
 		E87850742A27A17900699491 /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87850732A27A17900699491 /* IniciarSesionViewController.swift */; };
@@ -41,12 +47,18 @@
 		E87850B82A27B2CC00699491 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E87850B72A27B2CC00699491 /* FirebaseRemoteConfigSwift */; };
 		E87850BA2A27B2CC00699491 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E87850B92A27B2CC00699491 /* FirebaseStorage */; };
 		E87850BC2A27B2CC00699491 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E87850BB2A27B2CC00699491 /* FirebaseStorageCombine-Community */; };
-		E87850BE2A27C02900699491 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E87850BD2A27C02900699491 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82173C2A24E1E6157D46028F /* Pods_HinojosaSnapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HinojosaSnapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9062706AE657BE61CD3CF133 /* Pods-HinojosaSnapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HinojosaSnapchat.release.xcconfig"; path = "Target Support Files/Pods-HinojosaSnapchat/Pods-HinojosaSnapchat.release.xcconfig"; sourceTree = "<group>"; };
+		E81CC0A02A30E1F800E8D3F6 /* HinojosaSnapchat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HinojosaSnapchat.entitlements; sourceTree = "<group>"; };
+		E81CC0A12A30E56900E8D3F6 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		E81CC0A32A30E91100E8D3F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E81CC0A52A30ED9D00E8D3F6 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
+		E81CC0AB2A310D0200E8D3F6 /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
+		E81CC0AF2A31127000E8D3F6 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		E81CC0B12A3119E500E8D3F6 /* RegistrarseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarseViewController.swift; sourceTree = "<group>"; };
 		E878506C2A27A17900699491 /* HinojosaSnapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HinojosaSnapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E878506F2A27A17900699491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E87850712A27A17900699491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +67,6 @@
 		E87850782A27A17B00699491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E878507B2A27A17B00699491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E878507D2A27A17B00699491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E87850BD2A27C02900699491 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECA86C30A3E0EF02A2A8863D /* Pods-HinojosaSnapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HinojosaSnapchat.debug.xcconfig"; path = "Target Support Files/Pods-HinojosaSnapchat/Pods-HinojosaSnapchat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +126,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E81CC0AD2A31118B00E8D3F6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E81CC0A52A30ED9D00E8D3F6 /* ImagenViewController.swift */,
+				E87850732A27A17900699491 /* IniciarSesionViewController.swift */,
+				E81CC0A12A30E56900E8D3F6 /* SnapsViewController.swift */,
+				E81CC0AB2A310D0200E8D3F6 /* ElegirUsuarioViewController.swift */,
+				E81CC0B12A3119E500E8D3F6 /* RegistrarseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E81CC0AE2A31121900E8D3F6 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				E81CC0AF2A31127000E8D3F6 /* Usuario.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
 		E87850632A27A17900699491 = {
 			isa = PBXGroup;
 			children = (
@@ -136,10 +167,12 @@
 		E878506E2A27A17900699491 /* HinojosaSnapchat */ = {
 			isa = PBXGroup;
 			children = (
-				E87850BD2A27C02900699491 /* GoogleService-Info.plist */,
+				E81CC0AE2A31121900E8D3F6 /* Modelos */,
+				E81CC0AD2A31118B00E8D3F6 /* ViewControllers */,
+				E81CC0A02A30E1F800E8D3F6 /* HinojosaSnapchat.entitlements */,
 				E878506F2A27A17900699491 /* AppDelegate.swift */,
+				E81CC0A32A30E91100E8D3F6 /* GoogleService-Info.plist */,
 				E87850712A27A17900699491 /* SceneDelegate.swift */,
-				E87850732A27A17900699491 /* IniciarSesionViewController.swift */,
 				E87850752A27A17900699491 /* Main.storyboard */,
 				E87850782A27A17B00699491 /* Assets.xcassets */,
 				E878507A2A27A17B00699491 /* LaunchScreen.storyboard */,
@@ -241,8 +274,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87850BE2A27C02900699491 /* GoogleService-Info.plist in Resources */,
 				E878507C2A27A17B00699491 /* LaunchScreen.storyboard in Resources */,
+				E81CC0A42A30E91100E8D3F6 /* GoogleService-Info.plist in Resources */,
 				E87850792A27A17B00699491 /* Assets.xcassets in Resources */,
 				E87850772A27A17900699491 /* Main.storyboard in Resources */,
 			);
@@ -297,9 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81CC0A22A30E56900E8D3F6 /* SnapsViewController.swift in Sources */,
+				E81CC0A62A30ED9D00E8D3F6 /* ImagenViewController.swift in Sources */,
+				E81CC0B02A31127000E8D3F6 /* Usuario.swift in Sources */,
 				E87850742A27A17900699491 /* IniciarSesionViewController.swift in Sources */,
+				E81CC0B22A3119E500E8D3F6 /* RegistrarseViewController.swift in Sources */,
 				E87850702A27A17900699491 /* AppDelegate.swift in Sources */,
 				E87850722A27A17900699491 /* SceneDelegate.swift in Sources */,
+				E81CC0AC2A310D0200E8D3F6 /* ElegirUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HinojosaSnapchat/HinojosaSnapchat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -473,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HinojosaSnapchat/HinojosaSnapchat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
