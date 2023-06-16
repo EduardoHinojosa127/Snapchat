@@ -22,35 +22,37 @@ class ElegirUsuarioViewController: UIViewController, UITableViewDataSource, UITa
     
 
     @IBOutlet weak var listaUsuarios: UITableView!
+    var usuarios:[Usuario] = []
+    var imagenURL = ""
+    var audioID = ""
+    var audioURL = ""
+    var descrip = ""
+    var imagenID = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         listaUsuarios.delegate = self
         listaUsuarios.dataSource = self
-        
-        Database.database().reference().child("usuarios").getData { (error, snapshot) in
-                if let error = error {
-                    print("Error al obtener los datos de Firebase: \(error.localizedDescription)")
-                    return
-                }
-                
-            guard let usuariosSnapshot = snapshot!.children.allObjects as? [DataSnapshot] else {
-                    return
-                }
-                
-                for usuarioSnapshot in usuariosSnapshot {
-                    if let email = usuarioSnapshot.childSnapshot(forPath: "email").value as? String {
-                        let usuario = Usuario()
-                        usuario.email = email
-                        self.usuarios.append(usuario)
-                    }
-                }
-                
+        Database.database().reference().child("usuarios").observe(DataEventType.childAdded, with: { (snapshot) in
+            if let data = snapshot.value as? [String: Any], let email = data["email"] as? String {
+                let usuario = Usuario()
+                usuario.email = email
+                usuario.uid = snapshot.key
+                self.usuarios.append(usuario)
                 self.listaUsuarios.reloadData()
+            } else {
+                print("Error: Datos faltantes o nulos en el snapshot")
             }
+        })
+
         // Do any additional setup after loading the view.
     }
-    
-    var usuarios:[Usuario] = []
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let usuario = usuarios[indexPath.row]
+        let snap = ["from" : Auth.auth().currentUser?.email, "descripcion" : descrip, "imagenURL" : imagenURL, "imagenID" : imagenID, "audioURL": audioURL, "audioID": audioID]
+        Database.database().reference().child("usuarios").child(usuario.uid).child("snaps").childByAutoId().setValue(snap)
+        navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

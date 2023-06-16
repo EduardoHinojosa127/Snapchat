@@ -47,6 +47,8 @@
 		E87850B82A27B2CC00699491 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E87850B72A27B2CC00699491 /* FirebaseRemoteConfigSwift */; };
 		E87850BA2A27B2CC00699491 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E87850B92A27B2CC00699491 /* FirebaseStorage */; };
 		E87850BC2A27B2CC00699491 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E87850BB2A27B2CC00699491 /* FirebaseStorageCombine-Community */; };
+		E89A461B2A3A2E0500A60236 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89A461A2A3A2E0500A60236 /* Snap.swift */; };
+		E89A461D2A3A325A00A60236 /* VerSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89A461C2A3A325A00A60236 /* VerSnapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		E87850782A27A17B00699491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E878507B2A27A17B00699491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E878507D2A27A17B00699491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E89A461A2A3A2E0500A60236 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		E89A461C2A3A325A00A60236 /* VerSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerSnapViewController.swift; sourceTree = "<group>"; };
 		ECA86C30A3E0EF02A2A8863D /* Pods-HinojosaSnapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HinojosaSnapchat.debug.xcconfig"; path = "Target Support Files/Pods-HinojosaSnapchat/Pods-HinojosaSnapchat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +138,7 @@
 				E81CC0A12A30E56900E8D3F6 /* SnapsViewController.swift */,
 				E81CC0AB2A310D0200E8D3F6 /* ElegirUsuarioViewController.swift */,
 				E81CC0B12A3119E500E8D3F6 /* RegistrarseViewController.swift */,
+				E89A461C2A3A325A00A60236 /* VerSnapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				E81CC0AF2A31127000E8D3F6 /* Usuario.swift */,
+				E89A461A2A3A2E0500A60236 /* Snap.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -332,7 +338,9 @@
 			files = (
 				E81CC0A22A30E56900E8D3F6 /* SnapsViewController.swift in Sources */,
 				E81CC0A62A30ED9D00E8D3F6 /* ImagenViewController.swift in Sources */,
+				E89A461B2A3A2E0500A60236 /* Snap.swift in Sources */,
 				E81CC0B02A31127000E8D3F6 /* Usuario.swift in Sources */,
+				E89A461D2A3A325A00A60236 /* VerSnapViewController.swift in Sources */,
 				E87850742A27A17900699491 /* IniciarSesionViewController.swift in Sources */,
 				E81CC0B22A3119E500E8D3F6 /* RegistrarseViewController.swift in Sources */,
 				E87850702A27A17900699491 /* AppDelegate.swift in Sources */,

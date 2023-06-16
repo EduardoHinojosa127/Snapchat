@@ -29,7 +29,7 @@ class RegistrarseViewController: UIViewController {
                 }
                 
                 // Crear usuario en Firebase Auth
-                Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                     if let error = error {
                         // Si hay un error al crear el usuario, mostrar un mensaje al usuario
                         print("Error al crear la cuenta:", error.localizedDescription)
@@ -42,6 +42,7 @@ class RegistrarseViewController: UIViewController {
                     } else {
                         // El usuario se ha creado exitosamente
                         print("Cuenta creada exitosamente")
+                        Database.database().reference().child("usuarios").child(user!.user.uid).child("email").setValue(user!.user.email)
                         let alerta = UIAlertController(title: "Creación de cuenta", message: "Cuenta creada exitosamente", preferredStyle: .alert)
                         let btnOK = UIAlertAction(title: "Aceptar", style: .default, handler: { (UIAlertAction) in
                             self.performSegue(withIdentifier: "iniciarsegue", sender: nil)
